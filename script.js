@@ -137,7 +137,7 @@ var $messages = $('.messages-content'),
         }
 
         function finalizeChat() {
-            $('<div class="message new"><figure class="avatar"><img src="fav.png" /></figure>Thank you for your responses! You can reach out to us via the contact form <a class="wb-links" href="https://tangio.in/contact-tangio/#wpcf7-f3071-p3068-o1" target="_blank">here</a>.</div>').appendTo($('.mCSB_container')).addClass('new');
+            $('<div class="message new"><figure class="avatar"><img src="fav.png" /></figure>Thank you for your responses! You can reach out to us via the contact form <a href="https://tangio.in/contact-tangio/#wpcf7-f3071-p3068-o1" target="_blank">here</a>.</div>').appendTo($('.mCSB_container')).addClass('new');
             setDate();
             updateScrollbar();
         }

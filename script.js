@@ -120,7 +120,7 @@ function nextQuestion() {
     if (step < questions.length) {
         let q = questions[step];
         let choiceButtons = q.choices.map(choice => `<button class="choice-button">${choice}</button>`).join(' ');
-        $('<div class="message new"><figure class="avatar"><img src="fav.png" /></figure>' + q.question + '<br>' + choiceButtons + '</div>').appendTo($('.mCSB_container')).addClass('new');
+        $('<div class="message new"><figure class="avatar"><img src="img/fav.png" /></figure>' + q.question + '<br>' + choiceButtons + '</div>').appendTo($('.mCSB_container')).addClass('new');
         setDate();
         updateScrollbar();
         $('.choice-button').click(function () {
@@ -137,13 +137,13 @@ function nextQuestion() {
 }
 
 function finalizeChat() {
-    $('<div class="message new"><figure class="avatar"><img src="fav.png" /></figure>Thank you for your responses! You can reach out to us via the contact form <a href="https://tangio.in/contact-tangio/#wpcf7-f3071-p3068-o1" target="_blank">here</a>.</div>').appendTo($('.mCSB_container')).addClass('new');
+    $('<div class="message new"><figure class="avatar"><img src="img/fav.png" /></figure>Thank you for your responses! You can reach out to us via the contact form <a class="wb-links" href="https://tangio.in/contact-tangio/#wpcf7-f3071-p3068-o1" target="_blank">here.</a></div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
 }
 
 // button chat switcher
-// Toggle chat visibility and switch button functionality
+// Toggle chat visibility and switch button functionality   
 document.getElementById("chatbot-switch").addEventListener("click", function () {
     const chatElement = document.querySelector(".chat");
     const switchElement = document.getElementById("chatbot-switch");

@@ -1063,3 +1063,7 @@ Bounce
             color: #ffa200;
             text-decoration: none;
         }
+        button.choice-button {
+            line-height: 1.2;
+            margin: 4px;
+        }
